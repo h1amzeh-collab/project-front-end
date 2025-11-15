@@ -358,9 +358,7 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
  .projects{
   padding: 100px 0;
  }
- .projects p{
-  padding: 0 14% 5% 14% ;
- }
+
  .projects .container {
   display: flex;
   flex-direction: column;
