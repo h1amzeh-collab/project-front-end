@@ -3,6 +3,7 @@
   --faded-background: #f6f6f6;
    --color-paragraph: #777;
 }
+
 *{
     font-family: "Saira", sans-serif;
 }
@@ -47,10 +48,9 @@ body::selection{
 }
   .h1-head{
   font-size: 35px;
-  font-weight: 800;
   text-align: center;
    font-family: 'Oswald';
-   padding-bottom: 100px;
+   padding-bottom: 70px;
   }
   .p-head{
   font-size: 22px;
@@ -120,7 +120,8 @@ body::selection{
 }
 .landing .image img{
     width:40%;
-    transform: translateX(100%);
+    display: block;
+    margin: auto;
 }
 .landing  .content{
  width: 50%;
@@ -136,17 +137,14 @@ body::selection{
    line-height: 1.5;
 }
 .landing .social{
-    display: flex;
     padding: 3% 0 0 1%;
+}
+.landing .social i{
+   color: black;
 }
 .landing .social a{
     padding: 1%;
 }
-.landing .social a i 
-{ 
-  color: black; 
-} 
-
 svg {
   width: 100%;
   height: auto;
@@ -160,13 +158,17 @@ svg {
   .landing {
       display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+  .landing .social {
+    flex-direction: column;
 }
 .image{
-   width: 100% !important;
+  width: 100% !important;
 }
-.image img{
-   transform: translateX(82%) !important;
-}
+
 .landing .text {
   width: 100%;
 }
@@ -254,6 +256,9 @@ background-color: var(--faded-background);
   padding: 5% 0;
   background-color:var(--faded-background);
  }
+.education h1{
+     padding-bottom: 130px !important;
+ }
 
  .education .container > i{
   display: block;
@@ -273,9 +278,8 @@ background-color: var(--faded-background);
     position: relative;
     top: 0;
     text-align: center;
-    color:white;
-    background-color: var(--main-background); 
-
+      color: white;
+    background-color: var(--main-background);
 }
 .education .container-cards .card:first-child:hover, 
 .education .container-cards .card:nth-child(3):hover {
@@ -293,6 +297,7 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
     top:0;   
 }
 
+
 .education .container-cards .card i {
     padding: 25% 0 12% 0;
     display: block;
@@ -308,8 +313,7 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
 }
  @media(max-width:1000px){
   .education h1{
-  font-size: 16px;
-  padding-bottom: 20%;
+  padding-bottom: 20% !important;
  }
 .education .container-cards{
   grid-template-columns: repeat(2 , minmax(100px,1fr));
@@ -318,7 +322,6 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
  }
  @media(max-width:600px){
   .education h1{
-  font-size: 18px;
   padding-bottom: 20%;
   text-align: center;
  }
@@ -338,6 +341,7 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
  .projects{
   padding: 100px 0;
  }
+
 
  .projects .container {
   display: flex;
@@ -443,10 +447,10 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
   transition: top 0.5s;
   position: relative;
   top: 0;
-  color: white; 
-  background-color: var(--main-background);   
+  color: white;
+  background-color: var(--main-background);
+    
 }
-
 
 
 
@@ -462,6 +466,7 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
 }
 .experience .container .box p{
   line-height: 1.5;
+  
 }
 
 /*end experience */
@@ -472,18 +477,32 @@ box-shadow: rgba(20, 125, 218, 0.48) 6px 2px 16px 0px,
 
 }
 .footer .container,
+.footer  img,
 .footer .social
 {
    display: flex;
    justify-content: center;
+   align-content: center;
    align-items: center;
 }
 .footer .container{
    flex-direction: column;
 }
-.footer .social i{
- color: white;
+
+.footer  img{
+   width: 100px;
+   height: 100px;
+   padding-top: 40px;
+
 }
+.footer h1{
+ border-bottom: 2px solid white;
+}
+
+.footer .social i{
+color: white;
+}
+
 .footer p span{ 
  color: var(--main-background);
 }
