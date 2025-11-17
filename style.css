@@ -97,7 +97,11 @@ body::selection{
    padding: 5px !important; 
    font-size: 15px;  
 }
-
+ }
+ @media(max-width:400px){
+  .header  nav a{
+   font-size: 13px !important;   
+}
  }
 /* end part nav*/
 
@@ -149,9 +153,7 @@ svg {
   width: 102%;
   height: auto;
   position: absolute;
-  bottom: -23px;
-  left: 9px;
-
+  bottom: 0;
 }
 @media(max-width:650px){
   .landing {
